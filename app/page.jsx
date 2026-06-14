@@ -1,9 +1,6 @@
-'use client'
-
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white" id="root">
-      {/* Navigation */}
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <nav className="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
         <h1 className="text-2xl font-bold text-blue-600">TesteamentoVisual</h1>
         <a href="#cta" className="text-gray-700 hover:text-blue-600 font-medium">
@@ -11,7 +8,6 @@ export default function Home() {
         </a>
       </nav>
 
-      {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-6 py-20 text-center">
         <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
           La Biblia completa en cómics.
@@ -23,7 +19,6 @@ export default function Home() {
           Desde Génesis hasta Apocalipsis: historias bíblicas con personajes vestidos en la época correcta, diseñadas para cautivar a adolescentes.
         </p>
 
-        {/* Dual CTA */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <button
             id="cta"
@@ -41,7 +36,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Features Section */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-16">
@@ -88,7 +82,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Coverage Section */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
@@ -118,7 +111,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
       <section className="bg-blue-600 text-white py-20">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h3 className="text-4xl font-bold mb-4">
@@ -133,7 +125,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-gray-300 py-8 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">

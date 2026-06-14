@@ -1,0 +1,13 @@
+{
+  "maxTokens": 200000,
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 1,
+  "hooks": {},
+  "permissions": {
+    "bash": "allowed",
+    "write": "allowed",
+    "edit": "allowed",
+    "read": "allowed",
+    "powerShell": "allowed"
+  }
+}
