@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white" id="root">
       {/* Navigation */}
       <nav className="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
         <h1 className="text-2xl font-bold text-blue-600">TesteamentoVisual</h1>
