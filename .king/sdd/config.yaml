@@ -1,0 +1,48 @@
+schema: spec-driven-development
+version: 1.0
+
+context: |
+  Tech stack: React + Node.js + PostgreSQL + Stripe/MercadoPago
+  Architecture: Web App (SPA) + Backend API
+  Type: MVP para validación de mercado
+  Testing: Jest + Vitest (frontend), Jest + Supertest (backend)
+  Style: ESLint + Prettier
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes (database migrations, auth changes)
+    - Identify affected modules (frontend/backend/database)
+    - Reference related ADRs if aplicable
+
+  specs:
+    - Use Given/When/Then format for scenarios
+    - Use RFC 2119 keywords (MUST, SHOULD, MAY, MUST NOT)
+    - Include security considerations if auth/payments involved
+
+  design:
+    - Document architecture decisions with rationale (create ADR)
+    - List trade-offs explicitly (why this approach vs alternatives)
+    - Reference existing patterns in conventions.md
+
+  tasks:
+    - Group by phase (discovery, design, implementation, testing)
+    - Use hierarchical numbering (1, 1.1, 1.2, 2, 2.1, etc.)
+    - Assign to @developer, @architect, @qa, @frontend, @security
+
+  apply:
+    - Follow existing code patterns from conventions.md
+    - Validate against architecture.md before implementing
+    - TDD optional pero recomendado para auth/payments
+    test_command: "npm run test"
+    build_command: "npm run build"
+
+  verify:
+    test_command: "npm run test:coverage"
+    build_command: "npm run build"
+    coverage_threshold: 70
+    lighthouse_threshold: 90
+
+  archive:
+    - Warn before merging destructive deltas (database drops, endpoint removes)
+    - Create ADR para decisiones que no se pueden revertir
+    - Preserve all ADRs in .king/adr/ (versionado)

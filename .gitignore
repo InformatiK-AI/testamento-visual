@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tsbuildinfo
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.nuxt/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output/
+
+# Miscellaneous
+*.log
+.cache/
+temp/
+
+# King Framework — archivos sensibles (no versionar)
+.king/knowledge/environments.md
+.king/sessions/
+.king/.genesis-merge-mode
